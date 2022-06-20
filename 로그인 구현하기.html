@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      let begin = prompt("Who's there?",'');
+
+        if (begin == "Admin") {
+
+          let password = prompt("비밀번호를 입력하세요.", '');
+
+            if (password == "TheMaster") {
+              alert("환영합니다!");
+            } else if (password == '' || password == null) {
+              alert("취소되었습니다.");
+            } else {
+              alert("인증에 실패하였습니다.");
+            }
+
+        } else if (begin == '' || begin == null) {
+          alert("취소되었습니다.");
+        } else { alert("I don't know you."); }
+    </script>
+  </body>
+</html>
